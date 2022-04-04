@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../image/concrete_seamless.png);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+a{
+    text-decoration: none;
+}
+/*header start*/
+header{
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #d3d3d3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.yourname a{
+    background-color: #4aaaa5;
+    color: #fff;
+    height: 88px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar li{
+    border-left: 1px solid #fff;
+}
+ ul li:not(:first-child ){
+    border-left: 1px solid #777;
+}
+.navbar li a{
+   color: #777;
+   padding: 15px;
+}
+.navbar a:hover{
+    color: #038282;
+}
+/*header end*/
+
+/*main start*/
+.container{
+    margin-top: 10% ;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 68%;
+    display: flex;
+}
+ .contact{
+     width: 67%;
+     margin-right: 3%;
+     padding: 0 20px;
+     background-color: #fff;
+ }
+ .contact h1{
+     color: #4aaaa5;
+     border-bottom: 3px solid #d3d3d3;
+     height: 80px;
+     font-weight: bold;
+     font-size: 28px;
+     padding: 25px 0;
+ }
+form{
+    margin: 30px 0;
+}
+form label{
+    font-size: 25px;
+    color: #777;
+}
+form input{ 
+    width: 100%;
+    height: 45px;
+    border:1px solid #d3d3d3;
+    font-size: 18px;
+    color: #777;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #d3d3d3;
+}
+#submit{
+    width: 30%;
+    height: 45px;
+    background-color:  #4aaaa5 ;
+    color: #fff;
+    margin: 20px 0;
+}
+.connect-with-me{
+    background-color: #fff;
+    height: 200px;
+    width: 30%;
+}
+.connect-with-me h2{
+    color: #4aaaa5 ;
+    height: 80px;
+    width: 82%;
+    margin: auto;
+    border-bottom: 3px solid #d3d3d3;
+    padding-top: 27px;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+.connect-div {
+    display: flex;
+    justify-content: center;
+}
+.connect-div a img{
+    width: 60px;
+    height: 60px;
+    margin: 20px 5px;
+} 
+/*main end*/
+
+/*footer start*/
+ footer {
+    border-top: 7px solid #4aaaa5;
+    background-color:#777;
+    color: #fff;
+    padding-top: 40px;
+    text-align: center;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+/*footer end*/
+
+
+/* Media */
+@media  screen and (max-width: 980px) {
+    header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .container{
+        margin-top: 13% ;
+    }
+    .connect-with-me{
+        width: 45%;
+    }
+}
+@media  screen and (max-width: 768px){
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .container{
+       margin-top: 16% ;
+    }
+    .content{
+       width: 80%;
+    }
+    .connect-with-me{
+        width: 45%;
+        height: 22%;
+    }
+    .connect-with-me h2{
+        height: 60px;
+        font-size: 20px;
+        padding: 20px 0;
+   }
+    .connect-with-me a img{
+        width: 55px;
+        height: 55px;
+    }
+}
+@media  screen and (max-width: 640px) {
+    .yourname a {
+        font-size: 20px;
+        height: 58px;
+        padding: 20px;
+    }
+    .navbar ul a{
+        font-size: 12px;
+    }
+    .content{
+        width: 80%;
+    }
+    .contact h1{
+        font-size: 20px;
+        padding: 30px 0;
+    }
+    form label{
+        font-size: 18px;
+    }
+    form input{
+        height: 35px;
+    }
+    .connect-with-me{
+         width: 40%;
+         height: 20%;
+    }
+    .connect-with-me h2{
+         height: 55px;
+         font-size: 17px;
+         padding: 20px 0;
+    }
+    .connect-with-me a img{
+         width: 44px;
+         height: 44px;
+    }
+    footer{
+         height: 60px;
+         font-size: 10px;
+         padding-top: 20px;
+    }
+}
